@@ -1,0 +1,15 @@
+<script>
+const items = [
+{ id: 1, name: "Mobiles", isDeliverable: true },
+{ id: 2, name: "Accessories", isDeliverable: true },
+{ id: 3, name: "T.V", isDeliverable: false },
+];
+let allDeliverables = items.every (function (value) {
+return value.isDeliverable == true;
+});
+let notDeliverables = items.some(function (value) {
+return value.isDeliverable == true;
+});
+console.log("AllDeliverables", allDeliverables);
+console.log("NotDeliverables", notDeliverables);
+</script>
