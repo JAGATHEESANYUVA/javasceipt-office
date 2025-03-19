@@ -1,0 +1,11 @@
+<script> mobiles=[
+{id:1,mobile:"samsung",model:"a1",cost:15000},
+{id:2,mobile:"iphone",model:"a1",cost:52000},
+{id:3,mobile:"vivo",model:"a1",cost:125000},
+{id:4,mobile:"dell",model:"a1",cost:5000}
+];
+var select_mobile=mobiles.filter(function(value){
+    return value.cost >=10000;
+});
+console.log("filter_in_cost_mobile:",select_mobile);
+</script>

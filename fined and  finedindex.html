@@ -1,0 +1,15 @@
+<script>
+    const mobiles =[
+        {id:1,iteam:"samsung",cost:5000},
+        {id:1,iteam:"iphone",cost:55000},
+        {id:1,iteam:"vivo",cost:58000}
+    ];
+    var allmobiles=mobiles.find(function(value){
+        return value.cost >=10000
+    });
+    var allmobilesindex=mobiles.findIndex(function(value){
+        return value.cost <=10000
+    });
+    console.log("fined:",allmobiles);
+    console.log("finedindex:",allmobilesindex);
+</script>

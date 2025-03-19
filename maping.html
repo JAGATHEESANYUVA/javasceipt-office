@@ -1,0 +1,13 @@
+<script>
+    const person=[
+        {id:1,fistname:"sunil",lastname:"jagatheesan"},
+        {id:2,fistname:"mani",lastname:"kandan"},
+        {id:3,fistname:"selvam",lastname:"kumar"},
+    ];
+    var allnames=person.map(function(value){
+        var fullname=[value.fistname,value.lastname].join("")
+       var obj={id:value.id,fullname:fullname}
+     return obj
+    });
+    console.log(allnames);
+</script>

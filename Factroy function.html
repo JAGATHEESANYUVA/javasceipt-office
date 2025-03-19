@@ -1,0 +1,15 @@
+<script>
+    function createperson(name){
+        return {
+            name:name,
+            greeting:function(){
+                let mes= 'my name is ${This name}';
+                console.log(mes)
+            }  
+        };
+    };
+    let anbu= createperson("anbu");
+    let trisha=createperson("trisha");
+    anbu.greeting();
+    trisha.createperson();
+</script>
